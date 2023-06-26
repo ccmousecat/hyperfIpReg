@@ -1,0 +1,54 @@
+{
+    "name": "marko/hyperf-ip",
+    "description": "this is ip rego",
+    "type": "library",
+    "keywords": ["ip-rego"],
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "geoip2/geoip2": "^2.13",
+        "hyperf/config": "~2.2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/devtool": "~2.2.0",
+        "hyperf/ide-helper": "~2.2.0",
+        "hyperf/testing": "~2.2.0",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12",
+        "swoole/ide-helper": "^4.5",
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^5.4",
+        "hyperf/framework": "~2.2.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Marko\\HyperfIp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Marko\\HyperfIp\\ConfigProvider"
+        }
+    },
+    "authors": [
+        {
+            "name": "marko",
+            "email": "976520408@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "co-phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always"
+    }
+}

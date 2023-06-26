@@ -1,5 +1,5 @@
 {
-    "name": "marko/hyperf-ip",
+    "name": "lqc/hyperf-ip",
     "description": "this is ip rego",
     "type": "library",
     "keywords": ["ip-rego"],

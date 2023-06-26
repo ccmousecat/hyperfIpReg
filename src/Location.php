@@ -58,8 +58,6 @@ class Location
 
     /**
      * @return Reader[]
-     * @datetime 2022/09/15 21:24
-     * @author chaz6chez<chaz6chez1993@outlook.com>
      */
     public function getReaders(): array
     {
@@ -69,8 +67,6 @@ class Location
     /**
      * @param string $db
      * @return Reader
-     * @datetime 2022/09/15 21:24
-     * @author chaz6chez<chaz6chez1993@outlook.com>
      */
     public function createReader(string $db): Reader
     {
@@ -90,8 +86,6 @@ class Location
     /**
      * @param string|null $db
      * @return void
-     * @datetime 2022/09/16 11:12
-     * @author chaz6chez<chaz6chez1993@outlook.com>
      */
     public function removeReader(?string $db = null): void
     {
@@ -106,12 +100,9 @@ class Location
         }
     }
 
-
     /**
      * @param string $ip
      * @return array
-     * @datetime 2022/9/14 18:55
-     * @author sunsgne
      */
     public function getLocation(string $ip): array
     {
@@ -128,8 +119,6 @@ class Location
     /**
      * @param string $ip
      * @return City
-     * @datetime 2022/9/14 17:22
-     * @author sunsgne
      */
     public function city(string $ip): City
     {
@@ -149,8 +138,6 @@ class Location
     /**
      * @param string $ip
      * @return Asn
-     * @datetime 2022/9/14 17:22
-     * @author sunsgne
      */
     public function asn(string $ip): Asn
     {
@@ -170,8 +157,6 @@ class Location
     /**
      * @param string $ip
      * @return Country
-     * @datetime 2022/9/14 17:22
-     * @author sunsgne
      */
     public function country(string $ip): Country
     {
